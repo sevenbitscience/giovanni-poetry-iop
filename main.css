@@ -1,0 +1,43 @@
+body {
+    margin: auto;
+}
+
+div#carousel {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    background-color: black;
+}
+
+div#carousel div.button {
+    position: absolute;
+    width: 5vw;
+    height: 100%;
+    /* background-color: grey; */
+    opacity: 30%;
+    line-height: 100vh;
+    font-size: 5vw;
+    transition: 500ms;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+div#carousel div.button#right {
+    right: 0px;
+}
+
+div#carousel div.button:hover {
+    opacity: 70%;
+}
+
+div#carousel div#content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+div#carousel div#content div.slide {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
