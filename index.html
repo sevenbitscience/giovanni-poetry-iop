@@ -11,14 +11,23 @@
 </head>
 <body>
     <div id="carousel">
+        <div id="content">
+            <div id="cont0" class="slide" style="display: block;">
+                <svg viewBox="0 0 400 400">
+                    <g>
+                        <circle cx="200" cy="160" r="32" stroke="black" stroke-width="2" fill="white" />
+                        <circle cx="187" cy="150" r="5" fill="black" />
+                        <circle cx="213" cy="150" r="5" fill="black" />
+                        <path fill="none" stroke="black" stroke-width="2" stroke-linecap="round" d="M160 350 L200 290 L200 192 M200 290 L240 350 M170 250 L200 212 L230 250"/>
+                    </g>
+                </svg>
+            </div>
+            <div id="cont1" class="slide" style="display: none;"></div>
+            <div id="cont2" class="slide" style="display: none;"></div>
+        </div>
         <div id="controls">
             <div id="left" class="button" onclick="toLeft()"><span class="bi-caret-left-fill"></span></div>
             <div id="right" class="button" onclick="toRight()"><span class="bi-caret-right-fill"></span></div>
-        </div>
-        <div id="content">
-            <div id="cont0" class="slide" style="display: block;"></div>
-            <div id="cont1" class="slide" style="display: none;"></div>
-            <div id="cont2" class="slide" style="display: none;"></div>
         </div>
     </div>
 </body>
