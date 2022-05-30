@@ -21,8 +21,49 @@
                             <circle cx="213" cy="150" r="5" fill="black" />
                             <path fill="none" stroke="black" stroke-width="2" stroke-linecap="round" d="M160 350 L200 290 L200 192 M200 290 L240 350 M170 250 L200 212 L230 250"/>
                         </g>
+                        <pattern id="brick" x="0" y="0" width="100%" height="13" patternUnits="userSpaceOnUse">
+                            <rect width="400" height="13" fill="#b0a39c" stroke="none"/>
+                            <path stroke-dasharray="10 5" d="M0 5 L400 5 M7 11 L400 11" stroke="#990000" stroke-width="4"/>
+                        </pattern>
+                        <g id="storefront">
+                            <rect fill=url(#brick) width="400" height="300" />
+                            <line x1="0" y1="0" x2="0" y2="300" stroke="#ffffcc" stroke-width="5"/>
+                            <line x1="396" y1="0" x2="396" y2="300" stroke="#ffffcc" stroke-width="6"/>
+                            <rect x="100" y="50" width="200" height="150" stroke="#ffffcc" stroke-width="4" fill="#ccffff"/>
+                            <rect x="102" y="158" width="196" height="40" stroke="none" fill="#663300" />
+                            <rect x="4" y="300" width="96" height="100" fill="#c8c8c8"></rect>
+                            <rect x="104" y="300" width="96" height="100" fill="#c8c8c8"></rect>
+                            <rect x="204" y="300" width="96" height="100" fill="#c8c8c8"></rect>
+                            <rect x="304" y="300" width="96" height="100" fill="#c8c8c8"></rect>
+                        </g>
                     </defs>
-                    <use xlink:href="#stick-fig" />
+                    <use xlink:href="#storefront">
+                        <animateMotion
+                        dur="8s"
+                        repeatCount="indefinite"
+                        path="M-800 0 L-400 0"/>
+                    </use>
+                    <use xlink:href="#storefront">
+                        <animateMotion
+                        dur="8s"
+                        repeatCount="indefinite"
+                        path="M-400 0 L0 0"/>
+                    </use>
+                    <use xlink:href="#storefront">
+                        <animateMotion
+                        dur="8s"
+                        repeatCount="indefinite"
+                        path="M0 0 L400 0"/>
+                    </use>
+                    <use xlink:href="#storefront">
+                        <animateMotion
+                        dur="8s"
+                        repeatCount="indefinite"
+                        path="M400 0 L800 0"/>
+                    </use>
+                    <use xlink:href="#stick-fig">
+                        <animateMotion dur="1s" repeatCount="indefinite" path="M0 0 L0 5 L0 0"/>
+                    </use>
                 </svg>
             </div>
             <div id="cont1" class="slide" style="display: none;"></div>
