@@ -15,7 +15,7 @@ div#carousel div.button {
     width: 5vw;
     height: 100%;
     opacity: 30%;
-    transition: 500ms;
+    transition: opacity 500ms;
     line-height: 100vh;
     font-size: 5vw;
     top: 50%;
@@ -27,7 +27,7 @@ div#carousel div.button#right {
 }
 
 div#carousel div.button:hover {
-    opacity: 70%;
+    opacity: 80%;
 }
 
 div#carousel div#content {
