@@ -14,6 +14,10 @@
         <div id="content">
             <div id="cont0" class="slide" style="display: block;">
                 <svg viewBox="0 0 400 400">
+                    <style>
+                        text { font-family: sans-serif; fill: gold; font-size: 18pt; text-shadow: 0 0 8pt #000000; }
+                        text.small { font-size: 16pt; }
+                    </style>
                     <defs>
                         <pattern id="brick" x="0" y="0" width="100%" height="13" patternUnits="userSpaceOnUse">
                             <rect width="400" height="13" fill="#b0a39c" stroke="none"/>
@@ -48,24 +52,24 @@
                     <g>
                         <g transform="translate(-1000,0)">
                             <use xlink:href="#storefront" />
+                            <text x="115" y="165">what i really feel</text>
                             <rect x="100" y="50" width="200" height="0" fill="url(#blind)">
                                 <animate attributeName="height" dur="40" values="0; 0; 150; 150; 0; 0" keyTimes="0; 0.35; 0.38; 0.8; 0.81; 1" repeatCount="indefinite"/>
                             </rect>
-                            <text x="200" y="20">1a</text>
                         </g>
                         <g transform="translate(-600,0)">
                             <use xlink:href="#storefront" />
+                            <text x="110" y="165" class="small">where i need to go</text>
                             <rect x="100" y="50" width="200" height="0" fill="url(#blind)">
-                                <animate attributeName="height" dur="40" values="0; 0; 150; 150; 0; 0" keyTimes="0; 0.2; 0.23; 0.5; 0.51; 1" repeatCount="indefinite"/>
+                                <animate attributeName="height" dur="40" values="0; 0; 150; 150; 0; 0" keyTimes="0; 0.2; 0.23; 0.8; 0.81; 1" repeatCount="indefinite"/>
                             </rect>
-                            <text x="200" y="20">1b</text>
                         </g>
                         <g transform="translate(-200,0)">
                             <use xlink:href="#storefront" />
+                            <text x="110" y="165">what i want to do</text>
                             <rect x="100" y="50" width="200" height="0" fill="url(#blind)">
                                 <animate attributeName="height" dur="40" values="0; 0; 150; 150; 0; 0" keyTimes="0; 0.04; 0.07; 0.5; 0.51; 1" repeatCount="indefinite"/>
                             </rect>
-                            <text x="200" y="20">1c</text>
                         </g>
                         <animateMotion
                         dur="40s"
@@ -75,24 +79,25 @@
                     <g transform="translate(1200,0)">
                         <g transform="translate(-1000,0)">
                             <use xlink:href="#storefront" />
-                            <!-- <rect x="100" y="50" width="200" height="150" fill="url(#blind)">
-                                <animate attributeName="height" dur="40" values="150; 0; 150; 150" keyTimes="0; 0.3; 1" repeatCount="indefinite"/>
-                            </rect> -->
-                            <text x="200" y="20">2a</text>
+                            <text x="115" y="165">what i really feel</text>
+                            <rect x="100" y="50" width="200" height="150" fill="url(#blind)">
+                                <animate attributeName="height" dur="40" values="150; 150; 0; 0; 150; 150" keyTimes="0; 0.3; 0.31; 0.87; 0.9; 1" repeatCount="indefinite"/>
+                            </rect>
+                            <text x="150" y="150" font-size="24"></text>
                         </g>
                         <g transform="translate(-600,0)">
                             <use xlink:href="#storefront" />
-                            <!-- <rect x="100" y="50" width="200" height="0" fill="url(#blind)">
-                                <animate attributeName="height" dur="40" values="0; 0; 150; 150" keyTimes="0; 0.6; 0.7; 1" repeatCount="indefinite"/>
-                            </rect> -->
-                            <text x="200" y="20">2b</text>
+                            <text x="110" y="165" class="small">where i need to go</text>
+                            <rect x="100" y="50" width="200" height="0" fill="url(#blind)">
+                                <animate attributeName="height" dur="40" values="0; 0; 150; 150;" keyTimes="0; 0.7; 0.73; 1" repeatCount="indefinite"/>
+                            </rect>
                         </g>
                         <g transform="translate(-200,0)">
                             <use xlink:href="#storefront" />
-                            <!-- <rect x="100" y="50" width="200" height="0" fill="url(#blind)">
-                                <animate attributeName="height" dur="40" values="0; 0; 150; 150" keyTimes="0; 0.1; 0.2; 1" repeatCount="indefinite"/>
-                            </rect> -->
-                            <text x="200" y="20">2c</text>
+                            <text x="110" y="165">what i want to do</text>
+                            <rect x="100" y="50" width="200" height="0" fill="url(#blind)">
+                                <animate attributeName="height" dur="40" values="0; 0; 150; 150; 0; 0" keyTimes="0; 0.53; 0.56; 0.8; 0.81; 1" repeatCount="indefinite"/>
+                            </rect>
                         </g>
                         <animateMotion
                         dur="40s"
@@ -100,7 +105,7 @@
                         path="M0 0 L400 0 M-2000 0 L0 0"/>
                     </g>
                     <use xlink:href="#stick-fig">
-                            <animateMotion dur="1200ms" repeatCount="indefinite" path="M0 0 L0 5 L0 0"/>
+                            <animateMotion dur="1800ms" repeatCount="indefinite" path="M0 -10 L0 10 L0 -10" />
                     </use>
                 </svg>
             </div>
