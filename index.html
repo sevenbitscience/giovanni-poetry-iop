@@ -12,7 +12,7 @@
 <body>
     <div id="carousel">
         <div id="content">
-            <div id="cont0" class="slide" style="display: block;">
+            <div id="cont2" class="slide" style="display: none;">
                 <svg id="boxes" viewBox="0 0 400 400">
                     <defs>
                         <filter id="blur" x="-100%" y="-100%" width="400%" height="400%" >
@@ -151,7 +151,16 @@
                     </use>
                 </svg>
             </div>
-            <div id="cont2" class="slide" style="display: none;"></div>
+            <div id="cont0" class="slide" style="display: block;">
+                <svg id="ccrd" viewBox="0 0 400 400">
+                    <defs>
+                        <g id="instructions">
+                            <rect x="100" y="50" width="50" height="50" rx="5" stroke="gray" stroke-dasharray="5 8" fill="none" />
+                        </g>
+                    </defs>
+                    <use xlink:href="#instructions" />
+                </svg>
+            </div>
         </div>
         <div id="controls">
             <div id="left" class="button" onclick="toLeft()"><span class="bi-caret-left-fill"></span></div>
