@@ -13,6 +13,30 @@
     <div id="carousel">
         <div id="content">
             <div id="cont0" class="slide" style="display: block;">
+                <svg id="boxes" viewBox="0 0 400 400">
+                    <defs>
+                        <g id="box">
+                            <polygon points="100,300 300,300 250,250 150,250" fill="lime"/>
+                            <polygon points="150,250 250,250 250,150 150,150" fill="blue"/>
+                            <polygon points="150,150 250,150 300,100 100,100" fill="teal"/>
+                            <polygon points="150,250 100,300 100,100 150,150" fill="green"/>
+                            <polygon points="250,150 300,100 300,300 250,250" fill="lightblue"/>
+                            <rect x="100" y="100" width="200" height="0" opacity="50%">
+                                <animate id="box-close-anim" attributeName="height" dur="1s" to="200" begin="indefinite" fill="freeze"/>
+                                <animate id="box-open-anim" attributeName="height" dur="1s" to="0" begin="indefinite" fill="freeze"/>
+                            </rect>
+                        </g>
+                        <g id="stick-fig">
+                            <circle cx="200" cy="160" r="32" stroke="black" stroke-width="2" fill="white" />
+                            <circle cx="187" cy="150" r="5" fill="black" />
+                            <circle cx="213" cy="150" r="5" fill="black" />
+                            <path fill="none" stroke="black" stroke-width="2" stroke-linecap="round" d="M160 350 L200 290 L200 192 M200 290 L240 350 M170 250 L200 212 L230 250"/>
+                            <path fill="none" stroke="black" stroke-width="2" stroke-linecap="round" d="M188 173 L212, 173" />
+                        </g>
+                    </defs>
+                    <use xlink:href="#box"></use>
+                    <!-- <use xlink:href="#stick-fig" transform="scale(0.4,0.4) translate(300,300)"/> -->
+                </svg>
             </div>
             <div id="cont1" class="slide" style="display: none;">
                 <svg viewBox="0 0 400 400">
@@ -118,5 +142,17 @@
             <div id="right" class="button" onclick="toRight()"><span class="bi-caret-right-fill"></span></div>
         </div>
     </div>
+    <script>
+        var boxOpen = true;
+        document.getElementById("boxes").addEventListener('click', function() {
+            if (boxOpen) {
+                document.getElementById("box-close-anim").beginElement();
+                boxOpen = false;
+            } else {
+                document.getElementById("box-open-anim").beginElement();
+                boxOpen = true;
+            }
+        })
+    </script>
 </body>
 </html>
