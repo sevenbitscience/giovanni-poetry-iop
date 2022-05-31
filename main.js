@@ -7,7 +7,6 @@ function toRight() {
     } else {
         slide = 0;
     }
-    console.log(slide)
     displaySlide();
 }
 
@@ -17,7 +16,6 @@ function toLeft() {
     } else {
         slide = numSlides
     }
-    console.log(slide)
     displaySlide();
 }
 
