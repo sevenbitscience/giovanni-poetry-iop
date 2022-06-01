@@ -155,10 +155,23 @@
                 <svg id="ccrd" viewBox="0 0 400 400">
                     <defs>
                         <g id="instructions">
-                            <rect x="100" y="50" width="50" height="50" rx="5" stroke="gray" stroke-dasharray="5 8" fill="none" />
+                            <rect x="125" y="10" width="50" height="50" rx="8" stroke="gray" stroke-dasharray="4 6" fill="none" />
+                            <rect x="225" y="10" width="50" height="50" rx="8" stroke="gray" stroke-dasharray="4 6" fill="none" />
+                            <polygon points="185,30 205,30 205,22 218,35 205,48 205,40 185,40" stroke="gray" fill="none" />
+                            <rect x="145" y="20" width="10" height="30" fill="darkgray" />
+                            <rect x="235" y="30" width="30" height="10" fill="darkgray" />
+                        </g>
+                        <g id="bar" viewbox="0 0 40 100">
+                            <rect x="-20" y="-50" width="20" height="50" stroke="black" fill="black" />
+                            <rect x="-20" y="0" width="20" height="50" stroke="black" fill="black" />
+                            <rect x="0" y="-50" width="20" height="50" stroke="black" fill="black" />
+                            <rect x="0" y="0" width="20" height="50" stroke="black" fill="black" />
+                            <animateTransform id="ccrd-bar-anim" attributeName="transform" attributeType="XML" type="rotate" values="0; -5; 5; -5; 0" dur="250ms" begin="indefinite" />
                         </g>
                     </defs>
                     <use xlink:href="#instructions" />
+                    <use xlink:href="#bar" x="200" y="200" >
+                    </use>
                 </svg>
             </div>
         </div>
@@ -177,6 +190,9 @@
                 document.getElementById("box-open-anim").beginElement();
                 boxOpen = true;
             }
+        })
+        document.getElementById("ccrd").addEventListener('click', function() {
+            document.getElementById("ccrd-bar-anim").beginElement();
         })
     </script>
 </body>
